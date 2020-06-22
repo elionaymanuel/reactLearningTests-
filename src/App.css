@@ -1,17 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +11,131 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.li {
+  float: left;
+}
+
+.link{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.link:hover {
+  background-color: #111;
+}
+
+.todo-item{
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
+}
+
+.todo-done-total{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #30588e;
+}
+
+.todo-list{
+  background-color: white;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #efefef;
+    box-shadow:
+    /* The top layer shadow */
+        0 1px 1px rgba(0,0,0,0.15),
+            /* The second layer */
+        0 10px 0 -5px #eee,
+            /* The second layer shadow */
+        0 10px 1px -4px rgba(0,0,0,0.15),
+            /* The third layer */
+        0 20px 0 -10px #eee,
+            /* The third layer shadow */
+        0 20px 1px -9px rgba(0,0,0,0.15);
+    padding: 30px;
+}
+
+.footer{
+  text-align: center;
+  padding: 12px;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  font-weight: 600;
+  
+}
+body {
+  background-color: whitesmoke;
+}
+
+input[type=checkbox] {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}
+
+.round-button {
+  width: 25%;
+}
+
+.round-button-circle {
+  width: 25%;
+  height: 0;
+  padding-bottom: 25%;
+  border-radius: 50%;
+  border: 10px solid #cfdcec;
+  overflow: hidden;
+
+  background: #4679BD;
+  box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+  background: #30588e;
+}
+
+.round-button a {
+  display: block;
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;
+
+  text-align: center;
+  color: #e2eaf3;
+  font-family: Verdana;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
 }
