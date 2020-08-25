@@ -1,8 +1,8 @@
 import React from 'react';
-import NavBar from './Header'
+import NavBar from '../components/Header'
+import Footer from '../components/Footer'
 import Body from './Body'
 //import {todoList,TodoItem} from './TodoItem';
-import Footer from './Footer'
 import './App.css';
 
 function App() {

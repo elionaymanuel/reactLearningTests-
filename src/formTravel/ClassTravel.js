@@ -1,6 +1,8 @@
 import React from 'react'
-import NavBar from './Header'
+import NavBar from '../components/Header'
+//import Footer from '../components/Footer'
 import Form from './formTravelHTML'
+
 export default class FormTravel extends React.Component{
     constructor (props){
         super(props)
